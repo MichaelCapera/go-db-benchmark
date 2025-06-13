@@ -1,0 +1,33 @@
+# Archivos de dependencias y binarios
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Archivos temporales de desarrollo
+*.log
+*.out
+*.test
+*.tmp
+
+# Archivos generados por compiladores
+*.o
+*.a
+*.obj
+*.pyc
+*.pyo
+*.class
+
+# Archivos de pruebas o cobertura
+*.coverprofile
+*.prof
+
+# Directorios ocultos y herramientas del entorno
+.idea/
+.vscode/
+.DS_Store
+
+# Go module cache (solo si usas vendoring)
+vendor/
