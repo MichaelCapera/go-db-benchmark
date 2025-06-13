@@ -1,0 +1,16 @@
+📈 Comparación de rendimiento: PostgreSQL vs MySQL
+🔹 Inserción de usuarios (100,000 registros)
+🐘 PostgreSQL: 9.18 s
+
+🐬 MySQL: 15.27 s
+
+PostgreSQL fue ~39.9% más rápido
+(Cálculo: ((15.27 - 9.18) / 15.27) * 100 ≈ 39.9%)
+
+🔹 Inserción de transacciones concurrentes (10,000 registros)
+🐘 PostgreSQL: 489.38 ms
+
+🐬 MySQL: 590.96 ms
+
+PostgreSQL fue ~17.2% más rápido
+(Cálculo: ((590.96 - 489.38) / 590.96) * 100 ≈ 17.2%)

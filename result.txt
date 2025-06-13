@@ -1,0 +1,37 @@
+📊 Benchmark Summary (Local Machine)
+Operation	MySQL	PostgreSQL
+100,000 user inserts	15.27 sec	9.18 sec
+10,000 concurrent transactions	591 ms	489 ms
+
+🟢 PostgreSQL was:
+
+~40% faster for sequential inserts
+
+~17% faster for concurrent inserts
+
+🛠 Setup Instructions
+1. Clone the repo
+bash
+Copy
+Edit
+git clone https://github.com/MichaelCapera/go-db-benchmark.git
+cd go-db-benchmark
+2. Set up your local databases
+Ensure both MySQL and PostgreSQL are running and accessible on localhost.
+
+Run the SQL setup scripts:
+
+bash
+Copy
+Edit
+# For MySQL
+mysql -u root -p benchmarkdb < schema_mysql.sql
+
+# For PostgreSQL
+psql -U postgres -d benchmarkdb -f schema_postgres.sql
+3. Run the benchmark
+bash
+Copy
+Edit
+go mod tidy
+go run main.go
